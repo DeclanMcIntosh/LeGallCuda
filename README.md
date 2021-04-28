@@ -12,3 +12,14 @@ Poster can be accessed at https://www.declanmcintosh.com/projects/wavelet-prepro
 - cuda
 - Python > 3.6.6
 - Nvida GPU (Compute > 3.0)
+
+### Cite this work
+
+If you use this work please use the following bibtext for the citation
+
+@INPROCEEDINGS{McIntosh_2021_CRV,
+title={Preservation of High Frequency Content for Deep Learning-Based Medical Image Classification},
+author={McIntosh, Declan and Porto Marques, Tunai and Branzan Albu, Alexandra},
+booktitle={2020 17th Conference on Computer and Robot Vision (CRV)},
+year={2021}
+}
