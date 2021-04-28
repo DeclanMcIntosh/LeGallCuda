@@ -23,7 +23,7 @@ If you use this work please cite its related publication:
 @INPROCEEDINGS{McIntosh_2021_CRV,
 title={Preservation of High Frequency Content for Deep Learning-Based Medical Image Classification},
 author={McIntosh, Declan and Porto Marques, Tunai and Branzan Albu, Alexandra},
-booktitle={2020 17th Conference on Computer and Robot Vision (CRV)},
+booktitle={2020 18th Conference on Computer and Robot Vision (CRV)},
 year={2021}
 }
 ```
