@@ -31,7 +31,7 @@ def vert_CPU(Batch, result_L, result_H):
                     s = Batch[batch,index_c,j,channel]*0.5
                     if index_b > 0:
                         s = s -Batch[batch,index_b,j,channel]*0.25 
-                    if index_d < Batch.shape[1]//2:
+                    if index_d < Batch.shape[1]:
                         s = s -Batch[batch,index_d,j,channel]*0.25
                     result_H[batch,i,j,channel] = s
 
@@ -39,7 +39,7 @@ def vert_CPU(Batch, result_L, result_H):
                     s = -s + Batch[batch,index_c,j,channel]*1.25
                     if index_a > 0:
                         s = s -Batch[batch,index_a,j,channel]*0.125
-                    if index_e < Batch.shape[1]//2:
+                    if index_e < Batch.shape[1]:
                         s = s -Batch[batch,index_e,j,channel]*0.125
                     result_L[batch,i,j,channel] = s
 
@@ -61,7 +61,7 @@ def hor_CPU(Batch, result_L, result_H):
                     s = Batch[batch,i,index_c,channel]*0.5
                     if index_b > 0:
                         s = s -Batch[batch,i,index_b,channel]*0.25 
-                    if index_d < Batch.shape[2]//2:
+                    if index_d < Batch.shape[2]:
                         s = s -Batch[batch,i,index_d,channel]*0.25
                     result_H[batch,i,j,channel] = s
 
@@ -69,7 +69,7 @@ def hor_CPU(Batch, result_L, result_H):
                     s = -s + Batch[batch,i,index_c,channel]*1.25
                     if index_a > 0:
                         s = s -Batch[batch,i,index_a,channel]*0.125
-                    if index_e < Batch.shape[2]//2:
+                    if index_e < Batch.shape[2]:
                         s = s -Batch[batch,i,index_e,channel]*0.125
                     result_L[batch,i,j,channel] = s   
 
